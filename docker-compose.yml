@@ -1,0 +1,26 @@
+---
+version: "2.1"
+services:
+  nginx:
+    image: voip/nginx_upload_limit:0.1
+    container_name: nginx
+    ports:
+      - 80:80
+      - 12345:12345
+    restart: unless-stopped
+    networks: 
+      - nginx_limitation
+
+  iperf:
+    image: networkstatic/iperf3
+    container_name: iperf3
+    ports:
+      - 5201:5201
+    command: -s -V
+    restart: unless-stopped
+    networks: 
+      - nginx_limitation
+
+networks:
+  nginx_limitation:
+    driver: bridge
