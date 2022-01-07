@@ -1,6 +1,13 @@
 # nginx_limiting_upload
 
-docker (iperf3 <- nginx with stream module) <-- iperf3 client
+docker (iperf3 <- nginx with stream module) <-- iperf3 client from your local machine
+
+# To test from your computer:
+```
+iperf3 -c 127.0.0.1 -p 12345
+```
+- 127.0.0.1 = IP of your docker server
+- 12345 = port of nginx server
 
 
 iperf client:
