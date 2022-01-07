@@ -49,3 +49,7 @@ iperf3   | [  5]   7.00-8.00   sec   992 KBytes  8.13 Mbits/sec
 iperf3   | [  5]   8.00-9.00   sec   976 KBytes  7.99 Mbits/sec                  
 iperf3   | [  5]   9.00-10.00  sec   976 KBytes  8.00 Mbits/sec                  
 ```
+
+
+help:
+https://stackoverflow.com/questions/65275764/nginx-limit-upload-speed
